@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Senior Fitness with Amanda</title>
+   	<!--
+   	  	Senior Fitness with Amanda - Feedback and Requests
+   	  	Filename: feedback.html
+
+   	  	Author: Amanda Chappell
+   	  	Date: 03/30/20
+   	  	(JavaScript) HTML5 and CSS3 Final Project
+      -->
+   	<meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width">
+      <meta name="description" content="Senior Fitness with Amanda offers guidelines and recommendations to help seniors be able to design a custom low impact workout they can do at home.">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="outer-container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+         <aside>  
+            <p class="decorative-image"><a href="index.html"><img src="images/crossfit-sm.png" width="175" height="198" alt="Kettlebell silhouette"></a></p>
+         </aside>
+         <header>
+            <h1>Senior Fitness with Amanda</h1>
+         </header>
+         <div class="inner-container">
+            <nav class="sitenavigation">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="tips.html">Tips/Tricks</a></li>
+                  <li><a href="feedback.html">Requests/Feedback</a></li>
+               </ul>
+            </nav>
+            <h2>Requests and Feedback</h2>
+            <form action="results.html">
+               <p class="form-instructions">
+                  * indicates a required field
+               </p>
+               <fieldset class="contactinfo">
+                  <legend>Contact Info</legend>
+                  <label for="nameinput">
+                     Name
+                     <input type="text" name="name" id="nameinput" placeholder="First name" required>
+                  </label>
+                  <label for="emailinput">
+                     Email
+                     <input type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+                  </label>
+               </fieldset>
+               <fieldset class="exercisetype">
+                  <legend>Exercise Type</legend>
+                  <label for="seated">
+                     <input type="radio" name="type" id="seated" value="Seated">
+                     Seated
+                  </label>
+                  <label for="standing">
+                     <input type="radio" name="type" id="standing" value="Standing">
+                     Standing
+                  </label>
+               </fieldset> 
+               <fieldset class="areasofinterest">
+                  <legend>Areas of Interest</legend>
+                  <label for="warm">
+                     <input type="checkbox" id="warm" value="Warm Up" name="interest">
+                     Warm up
+                  </label>
+                  <label for="weights">
+                     <input type="checkbox" id="weights" value="Hand Weights" name="interest">
+                     Hand Weights
+                  </label>
+                  <label for="band">
+                     <input type="checkbox" id="band" value="Resistance Band" name="interest">
+                     Resistance Band
+                  </label>
+                  <label for="ball">
+                     <input type="checkbox" id="ball" value="Ball" name="interest">
+                     Ball
+                  </label><br>
+                  <label for="balance">
+                     <input type="checkbox" id="balance" value="Balance" name="interest">
+                     Balance
+                  </label>
+                  <label for="cardio">
+                     <input type="checkbox" id="cardio" value="Cardio" name="interest">
+                     Cardio
+                  </label>
+                  <label for="yoga">
+                     <input type="checkbox" id="yoga" value="Yoga" name="interest">
+                     Yoga
+                  </label>
+                  <label for="cooldown">
+                     <input type="checkbox" id="cooldown" value="Cooldown" name="interest">
+                     Cooldown
+                  </label>
+                  <label for="stretching">
+                     <input type="checkbox" id="stretching" value="Stretching" name="interest">
+                     Streching
+                  </label>
+               </fieldset>
+               <fieldset class="targetmuscles">
+                  <legend>Target Muscle Groups</legend>
+                  <label for="chest">
+                     <input type="checkbox" id="chest" value="Chest" name="muscle">
+                     Chest
+                  </label>
+                  <label for="back">
+                     <input type="checkbox" id="back" value="Back" name="muscle">
+                     Back
+                  </label>
+                  <label for="arms">
+                     <input type="checkbox" id="arms" value="Arms" name="muscle">
+                     Arms
+                  </label>
+                  <label for="shoulders">
+                     <input type="checkbox" id="shoulders" value="Shoulders" name="muscle">
+                     Shoulders
+                  </label>
+                  <label for="core">
+                     <input type="checkbox" id="core" value="Core" name="muscle">
+                     Core
+                  </label>
+                  <label for="legs">
+                     <input type="checkbox" id="legs" value="Legs" name="muscle">
+                     Legs
+                  </label>
+                  <label for="calves">
+                     <input type="checkbox" id="calves" value="Calves" name="muscle">
+                     Calves
+                  </label>
+               </fieldset>
+               <fieldset class="additionalinfo">
+                  <legend>Additional Information</legend>
+                  <label for="disclosure">
+                     Injuries, conditions, or limitations (recommended but optional)
+                     <textarea name="disclosure" id="disclosure" rows="3" cols="55"></textarea>
+                  </label>
+                  <label for="feedback">
+                     Feedback, special requests, other information
+                     <textarea name="feedback" id="feedback" rows="5" cols="55"></textarea>
+                  </label>
+               </fieldset>
+               <!--<fieldset class="submitbutton">-->
+                  <input type="submit" id="submit" value="Submit">
+               <!--</fieldset>-->
+            </form>
+         </div>
+         <footer>
+            <p>&bull; It doesn't get easier, you just get stronger &bull;</p>
+         </footer>
+      </div>
+   </body>   
+</html>

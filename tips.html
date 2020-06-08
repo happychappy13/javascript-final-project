@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Senior Fitness with Amanda</title>
+   	<!--
+   	  	Senior Fitness with Amanda - Tips and Tricks
+   	  	Filename: tips.html
+
+   	  	Author: Amanda Chappell
+   	  	Date: 03/30/20
+   	  (JavaScript)	HTML5 and CSS3 Final Project
+   	-->
+   	<meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width">
+      <meta name="description" content="Senior Fitness with Amanda offers guidelines and recommendations to help seniors be able to design a custom low impact workout they can do at home.">
+   	<link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="outer-container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+         <aside>
+            <p class="decorative-image"><a href="index.html"><img src="images/crossfit-sm.png" width="175" height="198" alt="Kettlebell silhouette"></a></p>
+         </aside>
+         <header>
+            <h1>Senior Fitness with Amanda</h1>
+         </header>
+         <div class="inner-container">
+            <nav class="sitenavigation">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="tips.html">Tips/Tricks</a></li>
+                  <li><a href="feedback.html">Requests/Feedback</a></li>
+               </ul>
+            </nav>
+            <article id="contentstart">
+               <h2>Tips and Tricks</h2>
+               <p>Click a category below to see related content</p>
+               <div class="buttons">
+                  <p id="workout" class="workout-button" onclick="highlight()">Workout Components</p>
+                  <p id="technique" class="technique-button" onclick="high()">Proper Technique</p>
+                  <p id="equipment" class="equipment-button" onclick="light()">Equipment Substitutes</p>
+               </div>
+               <div class="workout-content">
+                  <h3>Learn the different components of a good workout so you can have the confidence to create a routine at home that works best for you.</h3>
+                  <h4>Warm Up</h4>
+                  <p>Every workout should begin with a warm up. These movements start small and slowly become bigger as you start to raise your heart rate and work through your range of motion. You can start with a march that progressively adds more energy as you warm up. Do some shoulder shrugs and rolls. Work through your range of motion with some cross body and over the head reaches. Incorporate additional range of motion movements that include other parts of the body. Don't forget to warm up your wrists and ankles. Once your muscles are warmed up you can do a little bit of stretching to ensure your muscles are ready to go.</p>
+                  <h4>Strength and Endurance</h4>
+                  <p>Here you will incorporate your weights, resistance band, ball, cardio, and anything else you want to use during your workout. Remember to try and work every major muscle group (chest, shoulders, arms, back, core, legs, calves) so nothing gets neglected over time.</p>
+                  <h4>Cooldown</h4>
+                  <p>Cooling down is very important. It provides you with an opportunity to bring your heart rate down and start to recover from your workout. This is a good time to work on balance exercises or play a coordination game with your ball. Do something that will slow your body down and prepare you for the final part of your workout.</p>
+                  <h4>Stretching</h4>
+                  <p>Now is a good time to do some stretching. Your muscles are still warm which is the perfect time to work on your flexibility. Once you've had a chance to stretch your body out I recommend taking some long, deep breaths. Those deep breaths will leave you feeling relaxed and ready to handle whatever your day brings has in store for you.</p>
+               </div>
+               <div class="technique-content">
+                  <h3>Below you'll find videos to show you how to properly perform different types of exercises. Safety is the most important part of any workout whether at home or the gym.</h3>
+                  <h4>Bicep Curls</h4>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Nkl8WnH6tDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <h4>Lateral Raises</h4>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/kDqklk1ZESo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <h4>Squats</h4>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/aclHkVaku9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <h4>Lunges</h4>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/QOVaHwm-Q6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <h4>Calf Raises</h4>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/-M4-G8p8fmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div class="equipment-content">
+                  <h3>Don't have gym equipment at home? No problem! Below are some options for equipment substitutions using items that may be more accessible at home.</h3>
+                  <h4>Hand Weights</h4>
+                  <img id="cans" class="equipment" src="images/cans-sm.jpg" width="250px" alt="Cans">
+                  <p>If you don't have hand weights at home grab some canned goods, bottled juice, or water bottles out of your cupboard. Anything will work that adds a some extra weight to your exercises.</p>
+                  <h4>Resistance Band</h4>
+                  <img id="towel" class="equipment" src="images/towel-sm.jpg" width="250px" alt="Beach towels">
+                  <p>If you don't have a resistance band you can substitute a stretchy towel, shirt, or other type of fabric for some exercises. You can also imply resistance by acting like you're stretching a band. You'll provide the resistance to give yourself a good workout.</p>
+                  <h4>Ball</h4>
+                  <img id="bear" class="equipment" src="images/bear-sm.jpg" width="250px" alt="Teddy bear">
+                  <p>If you don't have a ball you can subsitute a stuffed animal, shirt, or towel small enough to be balled up in your hands. These options will give you something to squeeze for hand strengthening, pass back and forth for coordination, or even just hold on to during certain exercises.</p>
+               </div>
+            </article>
+         </div>
+         <footer>
+   	      <p>&bull; It doesn't get easier, you just get stronger &bull;</p>
+         </footer>
+      </div>
+      <script>
+         //change image size on mouseover and mouseout
+         var cans = document.querySelector("#cans");
+         var towel = document.querySelector("#towel");
+         var bear = document.querySelector("#bear");
+
+         cans.addEventListener("mouseover", hovered, false);
+         cans.addEventListener("mouseout", hoveredOut, false);
+         towel.addEventListener("mouseover", hover, false);
+         towel.addEventListener("mouseout", hoverOut, false);
+         bear.addEventListener("mouseover", hove, false);
+         bear.addEventListener("mouseout", hoveOut, false);
+
+         function hovered() {
+            cans.style.width = "300px";
+         }
+         function hoveredOut() {
+            cans.style.width = "250px";
+         }
+         function hover() {
+            towel.style.width = "300px";
+         }
+         function hoverOut() {
+            towel.style.width = "250px";
+         }
+         function hove() {
+            bear.style.width = "300px";
+         }
+         function hoveOut() {
+            bear.style.width = "250px";
+         }
+      </script>
+      <script>
+         var workout = document.querySelector("#workout");
+         var technique = document.querySelector("#technique");
+         var equipment = document.querySelector("#equipment");
+         function highlight() {
+            document.getElementById("workout").style.color = "red";
+            document.getElementById("technique").style.color = "black";
+            document.getElementById("equipment").style.color = "black";
+         }
+         function high() {
+            document.getElementById("workout").style.color = "black";
+            document.getElementById("technique").style.color = "red";
+            document.getElementById("equipment").style.color = "black";
+         }
+         function light() {
+            document.getElementById("workout").style.color = "black";
+            document.getElementById("technique").style.color = "black";
+            document.getElementById("equipment").style.color = "red";
+         }
+      </script>
+      <script>
+         //code to change out button content
+         var workoutButton = document.querySelector(".workout-button");
+         var techniqueButton = document.querySelector(".technique-button");
+         var equipmentButton = document.querySelector(".equipment-button");
+         var workoutContent = document.querySelector(".workout-content");
+         var techniqueContent = document.querySelector(".technique-content");
+         var equipmentContent = document.querySelector(".equipment-content");
+
+         function showWorkout() {
+            workoutContent.style.display = "block";
+            techniqueContent.style.display = "none";
+            equipmentContent.style.display = "none";
+         }
+         function showTechnique() {
+            workoutContent.style.display = "none";
+            techniqueContent.style.display = "block";
+            equipmentContent.style.display = "none";
+         }
+         function showEquipment() {
+            workoutContent.style.display = "none";
+            techniqueContent.style.display = "none";
+            equipmentContent.style.display = "block";
+         }
+
+        workoutButton.addEventListener("click", showWorkout, false);
+        techniqueButton.addEventListener("click", showTechnique, false);
+        equipmentButton.addEventListener("click", showEquipment, false);
+      </script>
+   </body>
+</html>

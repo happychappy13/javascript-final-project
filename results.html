@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Senior Fitness with Amanda</title>
+      <!--
+         Senior Fitness with Amanda - Feedback Page
+         Filename: results.html
+
+         Author: Amanda Chappell
+         Date: 04/01/20
+         (JavaScript) HTML5 and CSS3 Final Project
+      -->
+      <meta charset="utf-8">
+   	  <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Senior Fitness with Amanda offers guidelines and recommendations to help seniors be able to design a custom low impact workout they can do at home.">
+   	  <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="outer-container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+         <aside>
+            <p class="decorative-image"><a href="index.html"><img src="images/crossfit-sm.png" width="175" height="198" alt="Kettlebell silhouette"></a></p>
+         </aside>
+          <header>
+             <h1>Senior Fitness with Amanda</h1>
+          </header>
+          <div class="inner-container">
+             <nav class="sitenavigation">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="tips.html">Tips/Tricks</a></li>
+                  <li><a href="feedback.html">Requests/Feedback</a></li>
+               </ul>
+            </nav>
+            <article id="contentstart">
+               <h2>Your form has been submitted</h2>
+                  <h3>You entered the following data:</h3>
+
+                  <script>
+                      var formData = location.search;
+                      formData = formData.substring(1, formData.length);
+                      while (formData.indexOf("+") !== -1) {
+                         formData = formData.replace("+", " ");
+                      }
+                      formData = decodeURIComponent(formData);
+                      var formArray = formData.split("&");
+                      for (var i = 0; i < formArray.length; i = i + 1) {
+                         document.write("<p>" + formArray[i] + "</p>");
+                      }
+                  </script>
+            </article>
+          </div>
+        <footer>
+   	      <p>&bull; It doesn't get easier, you just get stronger &bull;</p>
+        </footer>
+    </div>
+  </body>
+</html>       	

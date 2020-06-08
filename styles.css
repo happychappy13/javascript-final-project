@@ -1,0 +1,312 @@
+/*
+Senior Fitness with Amanda
+Filename: styles.css
+
+Author: Amanda Chappell
+Date: 03/30/20
+(JavaScript) HTML5 and CSS3 Final Project
+*/
+
+/* reset styles */
+html {
+	font-size: 19px;
+}
+a, article, body, div, footer, header, h1, img, nav, p, ul, li, fieldset, form, h2, input, label, legend, textarea {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* body and container */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	background: black;
+	background: url("images/chalkboard-sm.jpg");
+	
+}
+.outer-container {
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #9F000F;
+	position: relative;
+	overflow: auto;
+}
+.inner-container {
+	width: 70%;
+	background-color: white;
+	float: right;
+}
+p {
+	line-height: 1.3em;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+	position: absolute;
+	left: -10000px;
+}
+p.skipnavigation a:focus {
+	color: black;
+	background-color: white;
+	top: 0.4em;
+	left: auto;
+	right: 0.4em;
+	z-index: 2;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* header section */
+header {
+	padding-bottom: 0.5em;
+}
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+/* sidebar */
+aside {
+	width: 30%;
+	float: left;
+	position: relative;
+}
+.twitter-timeline {
+	margin: 0.4em;
+	padding: 0.4em;
+}
+.decorative-image {
+	margin: 1%;
+	padding: 2%;
+	text-align: center;
+}
+
+/* site navigation */
+nav.sitenavigation {
+	text-align: right;
+	overflow: auto;
+	background-color: black;
+	text-align: center;
+}
+div.navigation-menu-button {
+	display: inline;
+	float: left;
+}
+nav.sitenavigation ul {
+	display: none;
+	position: relative;
+	z-index: 2;
+}
+nav.sitenavigation li {
+	padding: 0.5em;
+	text-align: left;
+}
+nav.sitenavigation ul, nav.sitenavigation div, nav.sitenavigation iframe {
+	display: inline-block;
+	vertical-align: middle;
+}
+nav.sitenavigation a:link {
+	text-decoration: none;
+}
+nav.sitenavigation a:visited {
+	color: white;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+	color: black;
+	background-color: white;
+}
+social-media-buttons {
+	margin: 0.4em 0.6em;
+}
+
+/* main content */
+article {
+	margin: 0 auto;
+	padding: 1em 1em 2em;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	position: relative;
+	overflow: auto;
+	text-align: center;
+	background-color: white;
+}
+article h2 {
+	margin: 0;
+	color: #9F000F;
+}
+h2 {
+	margin-top: 0.2em;
+}
+#about-me {
+	display: none;
+}
+.about-image {
+	display: block;
+	margin-left: 37%;
+	margin-bottom: 1%;
+	padding: 1%;
+}
+h3.tips a:link {
+   text-decoration: none;
+}
+h3.tips a:visited {
+	color: #9F000F;
+}
+h3.tips a:hover, h3.tips a:focus {
+	color: white;
+	background-color: black;
+}
+.buttons {
+	text-align: center;
+	font-size: .9em;
+	margin: 1em 0;
+}
+.buttons p {
+	margin: 0 0.4em;
+	padding: 0.2em 0.4em;
+	border: 2px solid black;
+	display: inline-block;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: white;
+}
+.buttons a {
+	text-decoration: none;
+	color: black;
+}
+.buttons p:hover {
+	background-color: #9F000F;
+	color: white;
+}
+#workout p:disabled {
+    color: black;
+}
+/*
+.highlight {
+	background: #9F000F;
+}
+*/
+.show {
+	display: block;
+}
+aside {
+	display: none;
+}
+
+/* form styles */
+form {
+	margin: 1%;
+	border: 2px solid black;
+}
+.form-instructions {
+	color: #9F000F;
+}
+
+/* fieldset styles */
+fieldset {
+	margin: 3%;
+	border: 1px solid black;
+}
+legend {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* field styles */
+.contactinfo input, textarea {
+	border: 1px solid black;
+	margin-bottom: 0.2em;
+	padding: 0.2em;
+	font-size: 1em;
+}
+.exercisetype, .areasofinterest, .targetmuscles {
+   padding: 0.2em;
+}
+#submit {
+	border: none;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	padding: 0.2em 0.2em;
+	margin-bottom: 0.2em;
+	display: inline-block;
+	background-color: #9F000F;
+	color: black;
+	font-size: 1.25em;
+	border-radius: 10px;
+}
+
+/* label styles */
+label {
+	font-size: 1em;
+	line-height: 1.6em;
+}
+.contactinfo label {
+	display: block;
+	position: relative;
+	margin: 0.8em 0;
+	text-align: left;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+#emailinput {
+	width: 20em;
+}
+.contactinfo label:before {
+	content: "* ";
+	color: #9F000F;
+}
+
+/* footer section */
+footer {
+	padding: 0.5em;
+	background-color: black;
+	color: white;
+	text-align: right;
+	clear: both;
+	width: 68%;
+	float: right;
+}
+/* small screen/tablet styles */
+@media screen and (min-width: 720px), print {
+   body {
+	   padding: 1em;
+   }
+   footer {
+	   margin-left: 30%;
+   }
+   nav.sitenavigation ul {
+	   display: none;
+   }
+}
+
+/* standard screen styles */
+@media screen and (min-width: 1000px) {
+   aside {
+      display: inline;
+   }
+   nav.sitenavigation {
+	  position: static;
+	  text-align: center;
+   }
+   div.navigation-menu-button {
+	  display: none;
+   }
+   nav.sitenavigation ul {
+	  display: inline;
+	  position: static;
+   }
+   nav.sitenavigation li {
+	  display: inline-block;
+   }
+}
+
+/* large screen styles */
+@media screen and (min-width: 1238px) {
+   body {
+	   width: 1200px;
+   }
+}
